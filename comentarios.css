@@ -1,0 +1,12 @@
+.comentarios-btn {
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+#comentarios-area {
+    display: none; /* Ocultar el área de comentarios por defecto */
+    margin-top: 20px; /* Margen superior */
+}

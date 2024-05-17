@@ -1,0 +1,13 @@
+#like-button {
+    cursor: pointer;
+  }
+  
+  #like-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  #like-text {
+    margin-left: 5px;
+  }
+  

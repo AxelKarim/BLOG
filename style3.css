@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    /*background: #efefef;*/
+    background-image: url(img_fem/clima7.jpg)
+}
+
+/*Barra dinamica*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.7s;
+    padding: 5px 10px 25px 15px;
+    z-index: 10;
+}
+
+header.abajo {
+    background: #7bf4f2;
+    padding: 5px 10px;
+}
+
+header a img {
+    width: 60px;
+    margin-right: 45px;
+    border-radius: 5px;
+    top: 0px;
+    left: 0px;
+    transition: 1.5s;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration:  none;
+    color: #fff;
+    letter-spacing: 4px;
+    font-weight: 600;
+    transform: 0.7s;
+}
+header.abajo.img,
+header.abajo ul li a {
+    color: #fff;
+}
+
+/*Termina barra dinamica*/
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea verticalmente el contenido */
+    
+}
+
+.container2 {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    padding-top: 75px;
+    flex-basis: 50%;
+}
+
+.segundo-bloque {
+    flex-basis: 60%;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile p {
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: #626262;
+}
+
+.post-container {
+    width: 75%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #000000;
+    margin: 20px 0;
+}
+
+.user-profile span {
+    font-size: 13px;
+    color: #9a9a9a;
+}
+
+.post-text {
+    color: #000000;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+
+
+.post-text a {
+    text-decoration: none;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.post-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activity-icons div img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.activity-icons div {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.post-profile-icon {
+    display: flex;
+    align-items: center;
+}
+
+.post-profile-icon img {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.post-row a {
+    color: #9a9a9a;
+}
+
+.footer {
+    text-align: center;
+    color: #9a9a9a;
+    padding: 10px 0 20px;
+    font-size: 13px;
+    
+}
+

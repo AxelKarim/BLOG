@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/*Barra dinamica*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.7s;
+    padding: 5px 10px 25px 15px;
+    z-index: 10;
+}
+
+header.abajo {
+    background: #7bf4f2;
+    padding: 5px 10px;
+}
+
+header a img {
+    width: 60px;
+    margin-right: 45px;
+    border-radius: 5px;
+    top: 0px;
+    left: 0px;
+    transition: 1.5s;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration:  none;
+    color: #fff;
+    letter-spacing: 4px;
+    font-weight: 600;
+    transform: 0.7s;
+}
+
+
+header.abajo.img,
+header.abajo ul li a {
+    color: #fff;
+}
+
+/*imagen del fondo del inicio*/
+.zona1 {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),  
+     url(img_fem/clima2.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+}
+
+/*Letras que cambian de color*/
+
+.header-content {  /*PARA EL TITULO UNIGEN*/
+    text-align: center;
+    position: absolute;
+    top: 40%; /* Ajustar este valor según sea necesario para moverlo más arriba */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .header-content h1 {
+      font-size: 75px;
+      line-height: 80px;
+      color: #f9fafc;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+      font-family: 'Montserrat', sans-serif; 
+      animation: colorChange 5s infinite alternate; 
+  }
+
+  .header-content p {
+      font-size: 16px;
+      color: #c5c5c5;
+      padding: 0 250px;
+      margin-bottom: 25px;
+  }
+
+  @keyframes colorChange {  /*Titulo para hacer la animacion*/
+      0% {
+          color: #f9fafc;
+      }
+      50% {
+          color: #7bf4f2; /* Color naranja */
+      }
+      100% {
+          color: #f9fafc;
+      }
+  }
+
+  /*Quienes somos*/
+.general-blog3 {
+    background-image: url(img_fem/clima3.jpg);
+    background-position: right;
+    width: 100%;
+}
+
+.general-blog1 {
+    width: 50%;
+    padding: 1px 100px 50px 50px;
+    background-color: #ffffff;
+}
+
+/*blog*/
+
+.blog-container {
+    text-align: center;
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #000000;    
+    margin: 25px 0 45px 0;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea verticalmente el contenido */
+}
+
+.blog-1 {
+    flex: 1; /* Esto es lo que toma el ancho máximo posible */
+    padding: 15px;
+    text-align: center;
+}
+
+.blog-1 img {
+    display: block; /* Para centrar la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3 {
+    font-size: 25px;
+    color: #000000;
+}
+
+.btn-1 {  
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ffffff;
+    color: #000000;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.btn-1:hover {
+    background-color: #8de1ec;
+    color: #000000;
+}
+
+
+/*Cuales son algunas formas...*/
+.general-blog {
+    display: flex;
+}
+
+.general-blog1 {
+    width: 50%;
+    padding: 1px 100px 50px 50px;
+    background-color: #aeaeae;
+}
+
+.general-blog2 {
+    background-image: url(img_fem/clima-montaña.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
